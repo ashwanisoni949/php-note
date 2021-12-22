@@ -1,0 +1,239 @@
+<?php
+//how to make termial by using php 
+echo 'this is the javahindi terminal';
+echo PHP_EOL;
+echo 'Now, Get start this terminal';
+$cmd=[
+    '--a'=>'addition of two number',
+    '--s'=>'substration of two number',
+    '--d'=>'divition of two number',
+    '--f'=>'file location <path>',
+    '--g'=>'find greater number',
+    '--h'=>'for help',
+    '--j'=>'jira information',
+  //  '--k'=>'',
+    '--l'=>'log file',
+  //  '--q'=>'',
+  //  '--w'=>'',
+  //  '--e'=>'',
+    '--r'=>'two number remainder',
+  //  '--t'=>'',
+  //  '--y'=>'',
+  //  '--u'=>'',
+    '--i'=>'',
+    '--o'=>'see all operation perform',
+    '--p'=>'Give me code php console clear',
+  //  '--z'=>'',
+  //  '--x'=>'',
+    //'--c'=>'computer keywords list',
+    //'--v'=>'php version:1.x',
+   // '--b'=>'',
+    //'--n'=>'',
+   // '--m'=>'',
+   // '--web'=>'',
+    '--techpile'=>'open techpile website',
+    '--lara'=>'open laragon server',
+    '-javahindi'=>'open javahindi website',
+    '--create'=>'who is create this terminal',
+    '--tech'=>'please tell me ,who tech u??',
+    '--git'=>'git commands',
+    '-ports'=>'all posts',
+    '-model'=>"what is SDLC MODEL",
+    '-sgml'=>'full form of SGML',
+    '-whatwg'=>'full form of whatwg',
+    '.php run'=>'how many ways we can run program',
+    '--fgets'=>'what is fgets',
+    '--avg'=>'find the average of three number'
+];
+echo PHP_EOL;
+foreach($cmd as $key=>$value)
+{
+    printf("%s\t\t:\t%s\n",$key,$value);
+}
+$output='';
+if(isset($argv[1]))
+{
+    $cmd1=$argv[1];
+    echo "\e[H\e[J";
+    switch($cmd1)
+    {
+        case '-javahindi':
+            $x=system("start chrome.exe 'https://javahindi.com'");
+            braek;
+        case '--avg':
+            $x=readline("ENTER THE FIRST NUMBER:");
+            $y=readline("ENTER THE SECOND NUMBER:");
+            $z=readline("ENTER THE THIRD NUMBER");
+            $output=($x+$y+$z)/3;
+            break;
+        case '--a':
+            $x=readline("ENTER THE FIRST NUMBER:");
+            $y=readline("ENTER THE SECOND NUMBER:");
+            $output=$x+$y;
+            break;
+         case '--s':
+            $x=readline("ENTER THE FIRST NUMBER:");
+            $y=readline("ENTER THE SECOND NUMBER:");
+            $output=$x-$y;
+            break;
+        case '--m':
+            $x=readline("ENTER THE FIRST NUMBER:");
+            $y=readline("ENTER THE SECOND NUMBER:");
+            $output=$x*$y;
+            break;
+        case '--d':
+            $x=readline("ENTER THE FIRST NUMBER:");
+             $y=readline("ENTER THE SECOND NUMBER:");
+            $output=$x/$y;
+            break;
+        case '--r':
+            $x=readline("ENTER THE FIRST NUMBER:");
+            $y=readline("ENTER THE SECOND NUMBER:");
+            $output=$x%$y;
+            break;
+        case '--create':
+            $output='ashwani kumar verma';
+            break;
+        case '--tech':
+            $output="avanish sir";
+                break;
+        case '--p':
+            $output='\e[H\e[J';
+                    break;
+        case '--h':
+             $output="";
+                break;
+        case '--a':
+            $x=readline("Enter a number1:\t");
+            $y=readline("Enter a number2:\t");
+            $output=$x+$y;
+                break;
+        case '-ports':
+            $x=printf("HTTP-80\nApache-80\nSkyp-80\nAnydesk-80\nSSL-443\nSSH-21\nFTP-21\nSFTP-22\nSMTP-25\nSQL-3304\nOracle-3306\nPostgrole-3306");
+            $output=$x;
+            break;
+        case '-model':
+        $x=printf("****SDLC MODEL TYPE****\n
+        1.waterfall model
+        2.spiral model
+        3.Evolution model 
+        4.Prototype model
+        5.agile model
+        
+        ");
+        $output=$x;
+        break;
+        case '--j':
+            $x=printf("***********INFORMATION OF JIRA************
+            1.jira is a project management tool
+            2.jira users scrum methodology or agile methodology
+            3.it users scrum and scrum template for project managemenet
+            4.jira is multilingual platform(english,franch,chines,russian,german,spanish)
+            5.jira is platform independent(because it is cloud based)
+            6.jira has two version
+               a.free version : 14-days trial
+               b.enterprise version
+            7.it is product of australian company atlassian
+            ---->4 Types of Cloud Server<---- 
+            1.github 
+            2.gitlab 
+            3.bitbucket(has link with jra atlassian
+            4.Bitkeeper(linux)
+            ");
+            $output=$x;
+            break;
+        case '--git':
+            $output=printf("*****GIT COMMANDS*****
+            it is linux or Unix based terminal tool used for vcm(version control managemenet)
+            ---->COMMANDS<-----
+            NOTE:--(use before $ then use git commands ex- (dollar)git clone)
+            git clone :first time you download any repo cloning-->git clone<https:url>
+            git pull : and second time it is used pull
+            git log :command it is used to find all the information about the repo
+            cd repo(master)
+            git log 
+            git show -help
+            git show --help
+            git branch : <current working>
+            git checkout <branch-name> : how to change main branch
+            cd .git/
+            cat head
+            git status : how to check tracking
+            git add filename : how to commit changes
+            git add <file-name>..<file-name> : multiple how to add file to stages for commit
+            git add -A
+            git add --all
+            git add.
+            git commit -m 'message name' : how to commit changes to git repo
+            git restore <file-name> : how to restore the deleted file
+            git remote add origin url : how to push the code to github
+            git remote -v : check the status of remote
+            git push origin <branch-name> : how to push
+            git push origin master : how to push 
+
+            
+            ");
+            break;
+        case '--i':
+            $output=printf("**********ini***********
+        it will contain all the important service ,assets resources 
+        permission utlites required by any program during startup
+        ex- php.ini
+        laragon.ini
+        mysql.ini
+
+        ");
+        break;
+        case '--l':
+            $output=printf("************LOG***********
+            it will contain all the run time error and exception 
+            occurred during execution of the program
+            it store the information with alerts status
+            1.success
+            2.info
+            3.warning
+            4.danger(critical)
+            ");
+            break;
+        case '-sgml':
+            $output=printf("standard generalized markup language\n");
+            break;
+        case '-whatwg':
+            $output=printf("web hypertext application technology working group\n");
+            break;
+        case '--run':
+            $output=printf("*****HOW MANY WAYS WE CAN RUN PROGRAM*********
+            1.using laragon terminal
+            launch laragon terminal
+            goto file-->type
+            php filename.php 
+             output:- termia-->php cli mode
+             2.using cmd/git bash..
+             goto file type
+             type php filename.php
+             output: terminal-->php cli mode
+             3.using php inbuild line interface
+             cli server 
+             goto file 
+             type : php -S localhost:<any port>
+             goto browser 
+             make a request 
+             localhost:<any port>
+             type 
+             url: localhost : amyport
+            ");
+            break;
+        case '--fgets':
+            $output=printf("******FGETS*******
+            fgets() allow you read the data from any input resouces. it 
+            internally user file poiner by default it can read 1024 charaacters
+            at a time from the input buffer
+            ");
+            break;
+        default:
+        $output=printf("this commands are invalid inputed");
+    }
+}
+echo $output;
+//echo " --> ",gettype($output);
+?>

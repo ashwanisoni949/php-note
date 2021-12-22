@@ -1,0 +1,16 @@
+Task (PHP)	12/12/2021: 
+
+	1. WAP in php to accept the name and display on another page.
+	2. WAP in php to take 3 numbers as input and display the result of sum.
+	3. WAP in php to make calculator to find sum, sub, multiplication and division.
+	4*. WAP in php to take info of user's name, email, password, mobile and display his information in next page.
+	5. WAP in php to take p,r,t and find SI.
+	6. WAP in php to accept length, breadth from  user and calculate area of rectangle and perimeter.
+	7. WAP in php to take radius as input and find area, circumference of circle.
+	8. WAP in php to find remainder of a given two numbers when a/b.
+	9*. WAP in php to find remainder of a given two numbers when a/b without using '%' operator.
+	10*. WAP in php to take a and b as input and use -, /, * operators to find sum but you are not allowed to use + operator and conditions are:
+		a. a>b always
+		b. a>0
+		c. b>0
+	11*. WAP in php to take input of 5 subjects of students, Enter his marks and show the marks of each subject with overall percentage.

@@ -1,0 +1,3 @@
+my name is ashwani kumar verma
+this is the first line1 and this is the second line 
+terminal dont read multiple line at a enter key 

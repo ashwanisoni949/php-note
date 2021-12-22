@@ -1,0 +1,66 @@
+<?php
+echo "this is ashwni terminal";
+echo PHP_EOL;
+echo "the ashwani framework : version 1.x";
+echo PHP_EOL;
+//property & values
+$commands=[
+    '--help'=>'this is help command',
+    '--v'=>'1.x',
+    '--a'=>'for addition',
+    '--s'=>'for substration',
+    '--m'=>'for multiplication',
+    '--d'=>'for division',
+    '--r'=>'for remainder',
+    'serve'=>'Run teh laravel server'
+
+];
+echo PHP_EOL; 
+foreach($commands as $key=>$value){
+printf("%s\t:\t%s\n",$key,$value);
+}
+$output='';
+if(isset($argv[1]))
+{
+    $command=$argv[1];
+    echo "\e[H\e[J";
+switch($command)
+{
+    case '--v':
+        $output='1.x';
+        break;
+        case '--a':
+            $x=readline("enter a number1");
+            $y=readline("enter a number2");
+            $output=$x+$y;
+            break;
+            case '--s':
+                $x=readline("enter a number1:\t ");
+                $y=readline("enter a number2:\t");
+                $output=$x-$y;
+                break;
+                case '--m':
+                    $x=readline("enter a number1:\t");
+                    $y=readline("enter a number2:\t");
+                    $output=$x*$y;
+                    break;
+                    case '--d':
+                        $x=readline("enter a number1:\t");
+                        $y=readline("enter a number2:\t");
+                        $output=$x/$y;
+                        break;
+                        case '--r':
+                            $x=readline("enter a number1:\t");
+                            $y=readline("enter a number2:\t");
+                            $output=($x)%($y);
+                            break;
+            
+            case 'serve':
+                system("php -S localhost:8000");
+        default:
+        $output='invalid command supplied';
+        break;
+}
+}
+echo $output;
+?>
